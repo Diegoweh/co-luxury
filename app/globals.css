@@ -1,26 +1,176 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --arena: #F5F2ED;
+  --arena-dark: #EDE8E0;
+  --abismo: #1C2B3A;
+  --abismo-light: #2C3E50;
+  --ocre: #C9954A;
+  --ocre-light: #D4A373;
+  --sal: #FFFFFF;
+  --text-muted: #8A8070;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-cormorant: var(--font-cormorant-var);
+  --font-jost: var(--font-jost-var);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost-var), 'Jost', sans-serif;
+  background: var(--arena);
+  color: var(--abismo);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Font utility */
+.font-cormorant {
+  font-family: var(--font-cormorant-var), 'Cormorant Garamond', Georgia, serif;
+}
+
+/* ─── Hero Animations ─── */
+@keyframes heroZoom {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1.0);  }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1;   }
+}
+
+.hero-bg-anim {
+  animation: heroZoom 12s ease-out forwards;
+}
+
+.hero-content-anim {
+  opacity: 0;
+  animation: heroFadeIn 1.2s 0.4s ease forwards;
+}
+
+.hero-scroll-anim {
+  opacity: 0;
+  animation: heroFadeIn 1.2s 1s ease forwards;
+}
+
+.scroll-pulse-anim {
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* ─── Gallery Strip ─── */
+.gallery-strip-item {
+  flex: 1;
+  min-width: 60px;
+  overflow: hidden;
+  position: relative;
+  transition: flex 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: none;
+}
+
+.gallery-strip-item:hover {
+  flex: 4;
+}
+
+.strip-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.6) brightness(0.85);
+  transition: filter 0.5s;
+}
+
+.gallery-strip-item:hover .strip-img {
+  filter: saturate(1) brightness(0.95);
+}
+
+.strip-label {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-family: var(--font-cormorant-var), 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--arena);
+  opacity: 0;
+  transition: opacity 0.4s 0.2s;
+  white-space: nowrap;
+}
+
+.gallery-strip-item:hover .strip-label {
+  opacity: 1;
+}
+
+/* ─── Booking Select ─── */
+.booking-select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-cormorant-var), 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--arena);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.booking-select option {
+  background: var(--abismo);
+  color: var(--arena);
+}
+
+/* ─── Atmosphere section giant quote ─── */
+.atm-giant-quote {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-cormorant-var), 'Cormorant Garamond', Georgia, serif;
+  font-size: 400px;
+  line-height: 1;
+  color: rgba(201, 149, 74, 0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ─── Testimonial top border ─── */
+.test-card-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 36px;
+  right: 36px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--ocre), transparent);
+}
+
+/* ─── Nav underline hover ─── */
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 100%;
+  height: 1px;
+  background: var(--ocre);
+  transition: right 0.3s ease;
+}
+
+.nav-link-underline:hover::after {
+  right: 0;
 }
