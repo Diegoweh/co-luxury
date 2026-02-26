@@ -30,11 +30,11 @@ export default function FinalCTA() {
         viewport={vp}
         transition={{ duration: 0.8 }}
       >
-        Tu refugio en
+        Tu estancia en
         <br />
-        <em className="italic text-[var(--ocre-light)]">el Pacífico mexicano</em>
+        <em className="italic text-[var(--ocre-light)]">Mazatlán</em>
         <br />
-        te espera.
+        empieza aquí.
       </motion.h2>
 
       <motion.p
@@ -44,8 +44,7 @@ export default function FinalCTA() {
         viewport={vp}
         transition={{ duration: 0.8, delay: 0.1 }}
       >
-        Disponibilidad limitada. Cada huésped recibe atención personalizada desde
-        el primer contacto.
+        Reserva directamente con nosotros y obtén la mejor tarifa. Llevamos 50 años cuidando cada estancia.
       </motion.p>
 
       <motion.div
@@ -61,7 +60,7 @@ export default function FinalCTA() {
         >
           <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-[400ms] ease-out" />
           <span className="relative z-[1] group-hover:text-[var(--abismo)] transition-colors duration-[400ms]">
-            Iniciar mi estancia
+            Ver disponibilidad
           </span>
         </a>
 
@@ -69,7 +68,7 @@ export default function FinalCTA() {
           href="#"
           className="text-[11px] font-light tracking-[0.25em] uppercase py-[22px] px-11 border border-[rgba(245,242,237,0.4)] text-[rgba(245,242,237,0.85)] no-underline transition-all duration-300 hover:border-[var(--ocre)] hover:text-[var(--ocre)]"
         >
-          Descubrir privilegios de temporada
+          Escríbenos por WhatsApp
         </a>
       </motion.div>
     </div>

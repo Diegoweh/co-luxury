@@ -5,28 +5,28 @@ import { motion } from 'framer-motion'
 const rooms = [
   {
     img: '/img/room.webp',
-    name: 'Suite Oceánica · Gran Privilegio',
-    meta: ['90 m²', 'Vista al mar', 'Terraza privada', '2 huéspedes'],
-    desc: 'Nuestra suite insignia. Una sala de estar independiente donde el horizonte entra por ventanales floor-to-ceiling. Jacuzzi exterior con vista nocturna a las estrellas del Pacífico.',
-    price: '$7,800',
+    name: 'Deluxe Vista Jardín',
+    meta: ['Balcón privado', 'Cama king', 'A/C', 'Vista jardín'],
+    desc: 'Vista a los jardines del hotel con toda la comodidad que necesitas para descansar de verdad. Balcón privado, aire acondicionado, cama king y el sonido del hotel a tu favor.',
+    price: '$4,500',
     cta: 'Asegurar mi noche',
     featured: true,
   },
   {
     img: '/img/room-2.webp',
-    name: 'Suite Arenas',
-    meta: ['58 m²', 'Vista parcial'],
-    desc: 'Tonos cálidos de arena y madera de mezquite. Cama king con ropa de cama italiana 600 hilos.',
-    price: '$4,900',
+    name: 'Suite Deluxe Ocean Front',
+    meta: ['Vista al mar', 'Balcón privado','Cama king', 'A/C'],
+    desc: 'Despierta con el Pacífico frente a ti. Vista directa al mar desde tu cama y tu balcón. La habitación que reservan quienes ya saben que esa vista lo cambia todo.',
+    price: '$6,500',
     cta: 'Reservar',
     featured: false,
   },
   {
     img: '/img/room-3.webp',
-    name: 'Villa Privada',
-    meta: ['140 m²', 'Piscina propia'],
-    desc: 'Tu propio pedazo de Mazatlán. Piscina privada, cocina gourmet, mayordomo dedicado 24h.',
-    price: '$18,500',
+    name: 'Master Suite',
+    meta: ['vista al mar', 'Sala independiente', 'Balcón', 'Cama king'],
+    desc: 'El espacio más amplio del hotel. Para quienes celebran algo grande o simplemente quieren más de todo: más metros, más vistas, más servicio.',
+    price: '$9,500',
     cta: 'Solicitar cotización',
     featured: false,
   },
@@ -56,10 +56,10 @@ export default function RoomsSection() {
           viewport={vp}
           transition={{ duration: 0.8 }}
         >
-          Suites donde el Pacífico
+          Tu habitación con vista al Pacífico 
           <br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
-          <em className="italic text-[var(--ocre)]">es parte del mobiliario</em>
+          <em className="italic text-[var(--ocre)]">te espera</em>
         </motion.h2>
 
         <motion.p
@@ -69,8 +69,7 @@ export default function RoomsSection() {
           viewport={vp}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          Cada suite ha sido diseñada para que el primer pensamiento al despertar
-          sea el color del agua, no el reloj.
+          Cada habitación tiene balcón privado. Muchas dan al mar. Todas al mismo nivel de comodidad que Costa de Oro mantiene desde hace 50 años.
         </motion.p>
       </div>
 
@@ -123,6 +122,9 @@ export default function RoomsSection() {
               </p>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
                 <div className="font-cormorant text-[30px] md:text-[32px] font-light text-[var(--abismo)]">
+                  <sub className="text-[13px] font-[200] text-[var(--text-muted)] font-sans align-baseline">
+                    Desde
+                  </sub>
                   {price}{' '}
                   <sub className="text-[13px] font-[200] text-[var(--text-muted)] font-sans align-baseline">
                     MXN / noche

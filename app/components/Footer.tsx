@@ -18,10 +18,10 @@ const planLinks = [
 ]
 
 const contactLinks = [
-  'reservas@costadeoro.mx',
-  '+52 669 000 0000',
-  'Av. del Mar 2000, Mazatlán',
-  'WhatsApp Concierge',
+  'info@hotelcostadeoro.mx ',
+  '+52 (669) 913 20 05 · Toll Free USA/CA: 1-877-341-8355',
+  'Av. Camarón Sábalo No. 710, Zona Dorada, Mazatlán, Sinaloa, México',
+  'WhatsApp',
   'Instagram',
 ]
 
@@ -51,8 +51,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-[13px] font-[200] text-[rgba(245,242,237,0.45)] leading-[1.8] max-w-[320px]">
-            Hotel Boutique frente al Pacífico. Mazatlán, Sinaloa, México. Donde
-            el lujo silencioso tiene dirección.
+            Hotel de playa frente al Pacífico. 50 años en la Zona Dorada de Mazatlán, México.
           </p>
         </div>
 

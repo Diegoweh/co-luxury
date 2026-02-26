@@ -90,7 +90,7 @@ export default function Navbar() {
         href="#reservar"
         className="hidden md:inline-flex text-[11px] font-normal tracking-[0.2em] uppercase px-7 py-3 bg-transparent border border-[rgba(201,149,74,0.7)] text-[var(--ocre)] no-underline transition-all duration-300 hover:bg-[var(--ocre)] hover:text-white"
       >
-        Asegurar mi refugio
+        Ver disponibilidad
       </Link>
 
       <AnimatePresence>
@@ -120,7 +120,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="inline-flex w-full justify-center text-[11px] font-normal tracking-[0.2em] uppercase px-5 py-3 bg-transparent border border-[rgba(201,149,74,0.7)] text-[var(--ocre)] no-underline transition-all duration-300 hover:bg-[var(--ocre)] hover:text-white"
                 >
-                  Asegurar mi refugio
+                  Ver disponibilidad
                 </Link>
               </li>
             </ul>

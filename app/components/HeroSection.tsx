@@ -29,7 +29,7 @@ export default function HeroSection() {
       >
         <p className="flex items-center gap-4 text-[11px] font-light tracking-[0.35em] uppercase text-[var(--ocre)] mb-6">
           <span className="block w-10 h-px bg-[var(--ocre)] text-shadow-" />
-          Mazatlán, Sinaloa · México
+          Zona Dorada · Mazatlán, México
         </p>
 
         <h1 className="font-cormorant text-[clamp(52px,7vw,96px)] font-light leading-none text-[var(--arena)] mb-8 tracking-[-0.01em]">
@@ -49,8 +49,7 @@ export default function HeroSection() {
           className="text-[20px] font-[200] leading-[1.8] text-[rgba(245,242,237,0.9)] max-w-[480px] mb-[52px] tracking-[0.02em]"
           style={{ textShadow: '0 1px 12px rgba(0,0,0,0.5)' }}
         >
-          Un refugio curado donde el Pacífico mexicano dicta el ritmo. Cada
-          detalle existe para que el tiempo se disuelva.
+          Frente al Pacífico, en el corazón de la Zona Dorada. Mazatlán como solo lo vive quien se queda a dormir con el sonido de las olas
         </p>
 
         <div className="flex gap-5 items-center">
@@ -59,13 +58,13 @@ export default function HeroSection() {
             className="relative overflow-hidden inline-block text-[11px] font-normal tracking-[0.22em] uppercase py-[18px] px-11 bg-[var(--ocre)] text-white no-underline group"
           >
             <span className="absolute inset-0 bg-[var(--abismo)] -translate-x-full group-hover:translate-x-0 transition-transform duration-[400ms] ease-out" />
-            <span className="relative z-[1]">Iniciar mi estancia</span>
+            <span className="relative z-[1]">Ver disponibilidad</span>
           </a>
           <a
             href="#experiencias"
             className="text-[11px] font-light tracking-[0.22em] uppercase text-[rgba(245,242,237,0.8)] no-underline py-[18px] border-b border-[rgba(245,242,237,0.25)] transition-colors duration-300 hover:text-[var(--ocre)] hover:border-[var(--ocre)]"
           >
-            Descubrir el hotel
+            Conocer el hotel
           </a>
         </div>
       </div>

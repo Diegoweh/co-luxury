@@ -18,12 +18,11 @@ export default function AtmosphereSection() {
       </span>
 
       <p className="font-cormorant text-[clamp(28px,4vw,52px)] font-light italic text-[var(--arena)] max-w-[860px] mx-auto mb-10 leading-[1.3] relative">
-        &ldquo;No existe un amanecer igual al del Pacífico cuando lo ves desde tu
-        cama, con{' '}
+        &ldquo;Llegué de turista.{' '}
         <em className="not-italic text-[var(--ocre-light)]">
-          la arena todavía fría
+          Me fui como si fuera a regresar pronto.
         </em>{' '}
-        y el café que ya llegó solo.&rdquo;
+        Y lo hice.&rdquo;
       </p>
 
       <p className="text-[11px] font-light tracking-[0.35em] uppercase text-[rgba(245,242,237,0.4)]">

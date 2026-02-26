@@ -6,33 +6,33 @@ const experiences = [
   {
     img: '/img/spa.webp',
     alt: 'Spa',
-    tag: 'Bienestar',
-    name: 'Spa del Pacífico',
-    desc: 'Rituales con piedras de obsidiana del volcán y aceites de coco de la costa sinaloense.',
+    tag: 'A 10 minutos del hotel',
+    name: 'Gran Acuario Mazatlán',
+    desc: 'El acuario más grande de México está a 10 minutos de tu habitación. Una experiencia que los niños no olvidan y que los adultos tampoco.',
     style: { gridColumn: '1 / 2', gridRow: '1 / 2' },
   },
   {
     img: '/img/restaurant.webp',
     alt: 'Gastronomía',
-    tag: 'Alta Gastronomía',
-    name: 'Mar Adentro · Restaurante',
-    desc: 'Cocina de autor donde el producto local dialoga con técnica contemporánea. Mesa con vista al Pacífico.',
+    tag: 'Cocina local · Vista al mar',
+    name: 'Adobes · Restaurante',
+    desc: 'Desayuno, comida y cena con vista al Pacífico. Cocina mexicana e internacional, con la sazón Sinaloa. El mar en el plato y enfrente.',
     style: { gridColumn: '2 / 4', gridRow: '1 / 2' },
   },
   {
     img: '/img/beach.webp',
     alt: 'Playa',
-    tag: 'Exclusivo',
-    name: 'Playa Privada',
-    desc: '200 metros lineales de arena para huéspedes. Servicio de mayordomo de playa de 7am a 7pm.',
+    tag: 'A pasos del hotel',
+    name: 'El Malecón de Mazatlán',
+    desc: '21 kilómetros de malecón. El más largo de México. Empieza frente al hotel y lleva hasta donde quieras ir: mercados, restaurantes, el Faro, el centro histórico.',
     style: { gridColumn: '1 / 3', gridRow: '2 / 3' },
   },
   {
     img: '/img/pool.webp',
     alt: 'Pool',
-    tag: 'Lifestyle',
-    name: 'Infinity Pool',
-    desc: 'Piscina de borde infinito al nivel del mar. Cocteles del Caribe a la carta.',
+    tag: 'Acceso directo',
+    name: 'Zona Dorada y Playa',
+    desc: 'Sal de tu habitación y en segundos estás en la playa. Arena, sol y el Pacífico a temperatura perfecta. La alberca también te espera si prefieres quedarte.',
     style: { gridColumn: '3 / 4', gridRow: '2 / 3' },
   },
 ]
@@ -57,7 +57,7 @@ export default function ExperiencesSection() {
         <div>
           <p className="flex items-center gap-4 text-[10px] font-light tracking-[0.4em] uppercase text-[var(--ocre)] mb-5">
             <span className="block w-7 h-px bg-[var(--ocre)]" />
-            Experiencias curadas
+            Zona Dorada · Primera línea
           </p>
           <h2 className="font-cormorant text-[clamp(38px,4vw,56px)] font-light leading-[1.05] max-w-[500px]">
             No itinerarios.

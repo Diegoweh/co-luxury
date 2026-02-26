@@ -10,9 +10,9 @@ const reveal = {
 const vp = { once: true, amount: 0.12 as const }
 
 const stats = [
-  { num: '47', label: 'Suites & Villas' },
-  { num: '28', label: 'años de historia' },
-  { num: '8', label: 'metros de océano' },
+  { num: '289', label: 'Habitaciones' },
+  { num: '50', label: 'años de historia' },
+  { num: '200', label: 'metros de océano' },
 ]
 
 export default function AboutSection() {
@@ -63,9 +63,9 @@ export default function AboutSection() {
           variants={reveal}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          El lujo verdadero
+          Cincuenta años frente al Pacífico 
           <br />
-          <em className="italic text-[var(--ocre)]">es la presencia.</em>
+          <em className="italic text-[var(--ocre)]">y no nos hemos movido</em>
         </motion.h2>
 
         <motion.p
@@ -76,10 +76,7 @@ export default function AboutSection() {
           variants={reveal}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          En Costa de Oro no vendemos habitaciones. Curamos estados de ánimo.
-          Desde el murmullo de las palmeras al amanecer hasta el aguachile que
-          llega como una ola de sabor, cada momento está diseñado para que
-          olvides todo lo que dejaste atrás.
+          Llevamos cincuenta años recibiendo familias, parejas y viajeros que regresan. Cuando el mar está a tus pies y el servicio es de verdad, no hay mucho más que explicar
         </motion.p>
 
         <motion.p
@@ -90,9 +87,7 @@ export default function AboutSection() {
           variants={reveal}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          A pasos del Malecón y frente al horizonte infinito del Pacífico, somos
-          el único lugar en Mazatlán donde la arena llega antes que el
-          despertador.
+          A pasos del Malecón y a metros de la playa más conocida de Mazatlán. En la Zona Dorada, donde la ciudad empieza a respirar diferente
         </motion.p>
 
         {/* Stats */}
