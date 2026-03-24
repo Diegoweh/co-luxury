@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    img: '/img/spa.webp',
+    img: '/img/acuario.webp',
     alt: 'Spa',
     tag: 'A 10 minutos del hotel',
     name: 'Gran Acuario Mazatlán',
@@ -20,7 +20,7 @@ const experiences = [
     style: { gridColumn: '2 / 4', gridRow: '1 / 2' },
   },
   {
-    img: '/img/beach.webp',
+    img: '/img/malecon.webp',
     alt: 'Playa',
     tag: 'A pasos del hotel',
     name: 'El Malecón de Mazatlán',
@@ -28,7 +28,7 @@ const experiences = [
     style: { gridColumn: '1 / 3', gridRow: '2 / 3' },
   },
   {
-    img: '/img/pool.webp',
+    img: '/img/playa.webp',
     alt: 'Pool',
     tag: 'Acceso directo',
     name: 'Zona Dorada y Playa',
