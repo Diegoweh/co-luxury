@@ -174,3 +174,13 @@ body {
 .nav-link-underline:hover::after {
   right: 0;
 }
+
+/* ─── Scrollbar Hide ─── */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
