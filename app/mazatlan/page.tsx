@@ -31,7 +31,7 @@ const activityImages: Record<string, { image: string; alt: string }> = {
     alt: 'Faro de Mazatlán',
   },
   'Pueblos Señoriales': {
-    image: '/img/mazatlan/pueblos-señoriales.webp',
+    image: '/img/mazatlan/pueblos-senoriales.webp',
     alt: 'Pueblos señoriales cerca de Mazatlán',
   },
   'Observatorio 1873': {
@@ -96,8 +96,7 @@ export default async function MazatlanPage() {
               </p>
               <h1 className="font-cormorant text-[clamp(42px,7vw,82px)] font-light leading-[0.95] tracking-[-0.02em]">
                 Actividades para hacer en Mazatlán
-              </h1>
-              
+              </h1>              
             </div>
 
             <section id="actividades">
