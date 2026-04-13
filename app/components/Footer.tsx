@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="font-cormorant text-[28px] font-light tracking-[0.08em] text-[var(--arena)] mb-4 md:mb-5 flex items-center gap-3">
             {/* Logo */}
-            <Link href="#">
+            <Link href="/">
               <Image
                 src="/costa-logo.webp"
                 alt="Costa de Oro Logo"

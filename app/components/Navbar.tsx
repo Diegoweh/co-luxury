@@ -4,18 +4,24 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const links = [
   { href: '#experiencias', label: 'Experiencias' },
   { href: '#habitaciones', label: 'Suites' },
-  { href: '#gastronomia', label: 'Gastronomía' },
-  { href: '#spa', label: 'Bienestar' },
+  { href: '/mazatlan', label: 'Mazatlán' },  
   { href: '#contacto', label: 'Contacto' },
 ]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const pathname = usePathname()
+
+  const resolveHref = (href: string) => {
+    if (!href.startsWith('#')) return href
+    return pathname === '/' ? href : `/${href}`
+  }
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80)
@@ -48,7 +54,7 @@ export default function Navbar() {
     >
       {/* Logo */}
       <Link
-        href="#"
+        href="/"
       >
         <Image
           src="/costa-logo.webp"
@@ -66,7 +72,7 @@ export default function Navbar() {
         {links.map(({ href, label }) => (
           <li key={href}>
             <Link
-              href={href}
+              href={resolveHref(href)}
               className="nav-link-underline text-[11px] font-light tracking-[0.2em] uppercase text-[rgba(245,242,237,0.75)] no-underline transition-colors duration-300 hover:text-[var(--arena)]"
             >
               {label}
@@ -87,7 +93,7 @@ export default function Navbar() {
 
       {/* CTA */}
       <Link
-        href="#reservar"
+        href={resolveHref('#reservar')}
         className="hidden md:inline-flex text-[11px] font-normal tracking-[0.2em] uppercase px-7 py-3 bg-transparent border border-[rgba(201,149,74,0.7)] text-[var(--ocre)] no-underline transition-all duration-300 hover:bg-[var(--ocre)] hover:text-white"
       >
         Ver disponibilidad
@@ -106,7 +112,7 @@ export default function Navbar() {
               {links.map(({ href, label }) => (
                 <li key={`mobile-${href}`}>
                   <Link
-                    href={href}
+                    href={resolveHref(href)}
                     onClick={() => setMobileOpen(false)}
                     className="text-[12px] font-light tracking-[0.2em] uppercase text-[rgba(245,242,237,0.85)] no-underline"
                   >
@@ -116,7 +122,7 @@ export default function Navbar() {
               ))}
               <li className="pt-1">
                 <Link
-                  href="#reservar"
+                  href={resolveHref('#reservar')}
                   onClick={() => setMobileOpen(false)}
                   className="inline-flex w-full justify-center text-[11px] font-normal tracking-[0.2em] uppercase px-5 py-3 bg-transparent border border-[rgba(201,149,74,0.7)] text-[var(--ocre)] no-underline transition-all duration-300 hover:bg-[var(--ocre)] hover:text-white"
                 >
